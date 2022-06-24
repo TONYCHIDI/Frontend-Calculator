@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #EFEFEF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: #0059FF;
+    width: 360px;
+    height: 590px;
+    border-radius: 14px;
+}
+
+.container>.calculator-grid {
+    max-width: 360px;
+    padding: 20px;
+    min-height: 560px;
+}
+
+.container>.calculator-grid>.button-section>.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0;
+}
+
+.container>.calculator-grid>.button-section>.buttons:first-child {
+    margin-top: 40px;
+}
+
+.container>.calculator-grid>.button-section>.buttons>button {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 14px;
+    outline: none;
+    background-color: #0059FF;
+}
+
+.container>.calculator-grid>.output {
+    height: 110px;
+    background-color: #FFF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 14px;
+}
+
+.container>.calculator-grid>.output .previous-operand {
+    color: #232222BF;
+    font-size: 1.5rem;
+}
+
+.container>.calculator-grid>.output .current-operand {
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.container>.calculator-grid>.button-section>.buttons>button:hover {
+    background-color: #6f6969;
+}
+
+.container>.calculator-grid>.button-section>.buttons>.clear {
+    background-color: #A10909;
+    color: #EFEFEF;
+}
+
+.container>.calculator-grid>.button-section>.buttons>.delete,
+.container>.calculator-grid>.button-section>.buttons>.equals {
+    background-color: #0f0303;
+    color: #EFEFEF;
+}
+
+.container>.calculator-grid>.button-section>.buttons>.clear,
+.container>.calculator-grid>.button-section>.buttons>.equals {
+    width: 160px;
+}
+
+.container>.calculator-grid>.button-section>.buttons>.operator {
+    color: #EFEFEF;
+}
